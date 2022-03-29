@@ -1,7 +1,7 @@
 const carsElem = document.querySelector(".carsDisplay")
 
 axios
-.get("http://api-tutor.herokuapp.com/v1/cars")
+.get("https://api-tutor.herokuapp.com/v1/cars")
 .then(function(cars){
 console.log(cars.data);
 
