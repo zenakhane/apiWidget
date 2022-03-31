@@ -1,4 +1,7 @@
-const carsElem = document.querySelector(".carsDisplay")
+const carsElem = document.querySelector(".carsDisplay");
+const makeElem = document.querySelector(".model");
+const colorElem = document.querySelector(".color");
+const btnElem = document.querySelector(".btn");
 
 axios
 .get("https://api-tutor.herokuapp.com/v1/cars")
@@ -14,6 +17,17 @@ cars.data.forEach(element => {
 `
     carsElem.appendChild(li)
 });
+
+const filterFunc = () => {
+let carColor = {};
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if(carColor.colorElem == carColor.makeElem){
+        element.push(carColor)
+    }
+    
+}
+}
 
 
 }); 
