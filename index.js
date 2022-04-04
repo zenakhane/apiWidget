@@ -19,9 +19,9 @@ btnElem.addEventListener('click', function () {
         .get("https://api-tutor.herokuapp.com/v1/cars/make/" + makeValue + "/color/" + colorValue)
         .then(results => results.data)
         .then(function (cars) {
-
+console.log(cars)
+carsElem.innerHTML = ""
             cars.forEach(function (car) {
-                carsElem.innerHTML = ""
                 const li = document.createElement("tr");
                 li.innerHTML = `
             <td>${car.make} <strong></td>
