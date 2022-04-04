@@ -1,7 +1,7 @@
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(240, 166, 240);
 }
 
@@ -16,7 +16,7 @@ table, tr, th {
   td {
     text-align: center;
     border: 1px solid black;
-    height: 40px;
+    height: 20px;
     vertical-align: bottom;
 
   }
@@ -27,7 +27,7 @@ table, tr, th {
     text-align: flex-start;
     align-items: center;
     margin: 0;
-    padding: 10px;
+    padding: 8px;
     
 
   }
@@ -35,28 +35,28 @@ table, tr, th {
   #make{
     background-color: #3498DB;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 10px;
   border: none;
   cursor: pointer;
 }
 #color{
   background-color: #3498DB;
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 10px;
   border: none;
   cursor: pointer;
 }
 .homeBtn{
-  padding: 15px 35px;
+  padding: 10px 25px;
      border-radius: 8px;
      background-color: pink;
       color:plum;
       border: 2px solid #05060a;
       font-style: oblique;
-      font-size: 15px;
-      margin: 20px;
+      font-size: 10px;
+      margin: 15px;
   }
   .Button{
     display: flex;
@@ -69,14 +69,14 @@ table, tr, th {
 }
 .make{
   box-sizing: border-box;
-       border: 2px solid #ccc;
+       border: 1px solid #ccc;
        border-radius: 4px;
        font-size: 16px;
        background-color: white;
-       background-position: 10px 10px;
+       background-position: 8px 8px;
        background-repeat: no-repeat;
-       padding: 5px 10px 5px 10px;
-       margin: 10px;
+       padding: 3px 8px 3px 8px;
+       margin: 8px;
 }
 .color{
       box-sizing: border-box;
@@ -84,10 +84,10 @@ table, tr, th {
        border-radius: 4px;
        font-size: 16px;
        background-color: white;
-       background-position: 10px 10px;
+       background-position: 8px 8px;
        background-repeat: no-repeat;
-       padding: 5px 10px 5px 10px;
-       margin: 10px;
+       padding: 3px 8px 3px 8px;
+       margin: 8px;
 }
 .btn{
   box-sizing: border-box;
@@ -95,11 +95,11 @@ table, tr, th {
        border-radius: 4px;
        font-size: 16px;
        background-color: white;
-       background-position: 10px 10px;
+       background-position: 8px 8px;
        background-repeat: no-repeat;
-       padding: 5px 10px 5px 10px;
        background-color: rgb(248, 102, 248);
-       margin: 10px;
+       padding: 3px 8px 3px 8px;
+       margin: 8px;
 }
 ul{
   list-style-type: circle;
