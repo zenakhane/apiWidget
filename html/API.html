@@ -7,17 +7,68 @@
 <link rel="stylesheet" href="../style.css">
     <title>APIs</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" ></script>
 
 </head>
 <body>
-  <p>Cars API</p> 
+  <script class="availCars" type="text/template">
+    <table>
+   <tr>
+     <!-- handlebars - used for compliling data -->
+        {{#each filterTheCars}}
+        <td>{{this.model}}</td>
+        <td>{{this.make}}</td>
+        <td>l{{this.color}}</td>
+        <td>{{this.price}}</td>
+        <td>{{this.reg_number}}</td>
+        {{/each}}
+   </tr>
+</table>
+</script>
+</head>
+<body>
+  <p>Car filter Widget</p>
   
+  <div class="filterCars">
+      
+       <select name="make" class="make">
+        <option value="Toyota" selected="selected">Toyota</option>
+          <option value="Ford" selected="selected">Ford</option>
+          <option value="Volkswagen" selected="selected">Volkswagen</option>        
+           <option value="Nissan" selected="selected">Nissan</option>
+          <option value="" selected="selected">Select make here </option>
+        </select>
+        
+         <select name="color" class="color">
+          <option value="Blue" selected="selected">Blue</option>
+          <option value="Orange" selected="selected">Orange</option>
+          <option value="Red" selected="selected">Red</option>        
+           <option value="White" selected="selected">White</option>
+           <option value="" selected="selected">Select color of choice</option>
+
+        </select>
+        <div> <button type="button" class="btn">submit</button></div>
+     </div>
+     <div class="Button">
+
+     </div>
+
+  
+  <ul class="brandDisplay">
+    <h4>Make </h4>
+  </ul>
+  
+  <ul class="colorDisplay">
+    <h4>Color</h4>
+  </ul>
   
   <table class="carsDisplay">
       <tr>
       <th>Make </th>
       <th>Model</th>
       <th>Color</th>
+      <th>Price</th>
+      <th>Registration</th>
     </tr>
   </table>
   <div class="Button">
@@ -25,7 +76,10 @@
    </div>
 </button>
   
-     <script src="../index.js"></script>
+     <script src="../index.js" defer></script>
+     <!-- <script src="../filter.js"></script> -->
+
+
   
   </body>
 </html>

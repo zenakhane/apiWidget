@@ -1,11 +1,27 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" ></script>
     <title>Document</title>
+    <script class="availCars" type="text/template">
+      <table>
+     <tr>
+       <!-- handlebars - used for complilimg data -->
+          <!-- {{#each filterTheCars}}
+          <td>{{this.model}}</td>
+          <td>{{this.make}}</td>
+          <td>l{{this.color}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.reg_number}}</td>
+          {{/each}}
+     </tr>
+  </table>
+  </script>
 </head>
 <body>
     <p>Car filter Widget</p>
@@ -14,29 +30,30 @@
         
          <select name="make" class="make">
           <option value="Toyota" selected="selected">Toyota</option>
-            <option value="Toyota" selected="selected">Ford</option>
-            <option value="Toyota" selected="selected">Volkswagen</option>        
-             <option value="Toyota" selected="selected">Nissan</option>
+            <option value="Ford" selected="selected">Ford</option>
+            <option value="Volkswagen" selected="selected">Volkswagen</option>        
+             <option value="Nissan" selected="selected">Nissan</option>
             <option value="" selected="selected" >Select make here </option>
           </select>
           
            <select name="color" class="color">
-            <option value="Toyota" selected="selected">Blue</option>
-            <option value="Toyota" selected="selected">Orange</option>
-            <option value="Toyota" selected="selected">Red</option>        
-             <option value="Toyota" selected="selected">White</option>
-             <option value="Toyota" selected="selected">Select color of choice</option>
+            <option value="Blue" selected="selected">Blue</option>
+            <option value="Orange" selected="selected">Orange</option>
+            <option value="Red" selected="selected">Red</option>        
+             <option value="White" selected="selected">White</option>
+             <option value="" selected="selected">Select color of choice</option>
 
           </select>
-        
-          <button type="submit" class="btn" value="Submit">Submit</button>
-
+          <div> <button type="button" class="btn">submit</button></div>
        </div>
        <div class="Button">
         <button class="homeBtn"> <a href="../index.html"> Go to home </a>
 
        </div>
 
+       <script src="../index.js"></script>
+       <script src="../filter.js" defer></script>
+
 
 </body>
-</html>
+</html> --> -->
