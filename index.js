@@ -39,7 +39,7 @@ btnElem.addEventListener('click', function () {
 axios
     .get("https://api-tutor.herokuapp.com/v1/cars")
     .then(function (cars) {
-        // console.log(cars.data);
+        console.log(cars.data);
 
         cars.data.forEach(element => {
             const li = document.createElement("tr");
@@ -57,7 +57,7 @@ axios
 axios
     .get("https://api-tutor.herokuapp.com/v1/makes")
     .then(function (makes) {
-        // console.log(makes.data);
+        console.log(makes.data);
 
         makes.data.forEach(element => {
             const li = document.createElement("ul");
@@ -70,7 +70,7 @@ axios
 axios
     .get("https://api-tutor.herokuapp.com/v1/colors")
     .then(function (colors) {
-        // console.log(colors.data);
+        console.log(colors.data);
 
         colors.data.forEach(color => {
             const li = document.createElement("ul");
